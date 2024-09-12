@@ -1,0 +1,140 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #42b549aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #42b549aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "cart"
+    "footer";
+  min-height: 100vh;
+}
+
+.App-header {
+  grid-area: header;
+  background-color: #42b549;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.App-header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.App-header nav ul li {
+  margin: 0 1rem;
+}
+
+.App-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.App-header nav ul li a:hover {
+  color: #e6e6e6;
+}
+
+.App-main {
+  grid-area: main;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.App-cart {
+  grid-area: cart;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+
+.App-footer {
+  grid-area: footer;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Gaya tambahan untuk komponen lain */
+button {
+  background-color: #42b549;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2e8540;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
